@@ -42,9 +42,9 @@ mongoose.connect(process.env.MONGO_DB, {useNewUrlParser: true, useUnifiedTopolog
 })
 
 //Development
-app.listen(process.env.PORT, () => {
-  console.log(`server is running at port: ${process.env.PORT}`)
-})
+// app.listen(process.env.PORT, () => {
+//   console.log(`server is running at port: ${process.env.PORT}`)
+// })
 
 //Production
 var server = app.listen(process.env.PORT || 3000, () => {
